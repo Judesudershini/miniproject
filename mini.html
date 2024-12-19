@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Stock Tracker</title>
+  <link rel="stylesheet" href="mini.css">
+</head>
+<body>
+  <h1>Stock Portfolio Tracker</h1>
+  <form id="stock-form">
+    <input type="text" id="ticker" placeholder="Ticker (e.g., AAPL)" required>
+    <input type="number" id="shares" placeholder="Number of Shares" required>
+    <input type="number" id="price" placeholder="Purchase Price" step="0.01" required>
+    <button type="submit">Add Stock</button>
+  </form>
+  <table id="portfolio">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Shares</th>
+        <th>Purchase Price</th>
+        <th>Current Price</th>
+        <th>Profit/Loss</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="mini.js"></script>
+</body>
+</html>

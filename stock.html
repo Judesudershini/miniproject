@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit/Loss Dashboard</title>
+    <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+    <header>
+        <h1>Profit/Loss Dashboard</h1>
+    </header>
+    <main>
+        <div id="dashboard">
+            <!-- Summary Section -->
+            <div id="summary">
+                <h2>Summary</h2>
+                <p>Total Revenue: <span id="total-revenue">$0</span></p>
+                <p>Total Expenses: <span id="total-expenses">$0</span></p>
+                <p>Profit/Loss: <span id="profit-loss">$0</span></p>
+            </div>
+
+            <!-- Chart Section -->
+            <div id="chart-container">
+                <h2>Financial Data Visualization</h2>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed with 💻 and 📊</p>
+    </footer>
+    <script src="stock.js"></script>
+</body>
+</html>
